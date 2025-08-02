@@ -1,0 +1,271 @@
+/* Reset base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('../images/tulip.jpeg');
+  background-repeat: repeat;
+  background-size: cover;
+  color: #333;
+  padding-bottom: 60px;
+} */
+
+/* Body styling  */
+ body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url("../images/tulip.jpeg");
+  background-repeat: repeat;
+  background-size: 200px 200px; /* less crowded tulips*/
+  background-position: center;
+  background-color: #fffef7; /* cream white */
+  color: #333;
+  padding: 20px;
+}
+.header {
+  background-color: #ffe4ec; /* soft pink */
+  text-align: center;
+  padding: 50px 20px 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+/*The profile photo styling*/
+.profile-photo {
+  margin-bottom: 15px;
+}
+h1{
+  text-align: center;
+  color: #ad1457;
+}
+
+h3{
+  color: #ad1457;
+}
+.profile-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio {
+  padding: 2rem;
+}
+
+.category {
+  margin-bottom: 3rem;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+
+}
+
+.image-gallery img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Navigation Bar */
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
+  border-bottom: 2px solid #f3c1d8;
+}
+
+.nav-tabs a {
+  background-color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  color: #ad1457;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs a:hover,
+.nav-tabs a.active {
+  background-color: #f8bbd0;
+  color: white;
+}
+
+/* Layout for homepage section */
+.home-section {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap; 
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 30px;
+}
+
+.home {
+  flex: 1 1 60%;
+}
+
+.feature-image {
+  flex: 0 1 35%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.feature-image img {
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  margin: 60px auto;
+}
+
+
+/* 
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-image {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+} */
+
+
+/* Main Sections */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(173, 20, 87, 0.1);
+}
+
+main h1 {
+  color: #880e4f;
+  margin-bottom: 15px;
+}
+
+main h2 {
+  color: #ad1457;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+main p, main li {
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+  font-size: 0.95em;
+  border-top: 2px solid #f3c1d8;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #d81b60;
+}
+
+footer a:hover {
+  color: #880e4f;
+}
+
+/* Form Styling (Contact Page) */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #ad1457;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: #d81b60;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ad1457;
+}
+
+/* Utility Classes */
+ul {
+  padding-left: 20px;
+}
+
+a {
+  color: #ad1457;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #d6336c;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 600px) {
+  .nav-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-tabs a {
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
